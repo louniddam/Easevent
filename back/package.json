@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js --exec babel-node",
     "prisma": "npx prisma migrate dev",
-    "db:migrate": "DATABASE_URL='mysql://root:rootYassin@localhost:3306/quizz_dev?schema=public?' npx prisma migrate dev --name init",
-    "db:visualize": "DATABASE_URL='mysql://root:rootYassin@localhost:3306/quizz_dev?schema=public?' npx prisma studio"
+    "db:migrate": "DATABASE_URL='mysql://root:root@localhost:3306/easevent?schema=public?' npx prisma migrate dev --name init",
+    "db:visualize": "DATABASE_URL='mysql://root:root@localhost:3306/easevent?schema=public?' npx prisma studio"
   },
   "keywords": [],
   "author": "",
